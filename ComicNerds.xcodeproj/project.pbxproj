@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8ABE84053FF90B28CC47519 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CE9D77AF046BC72EB3710B /* libPods.a */; };
+		B41865C41A4863B7002049DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B41865C31A4863B7002049DF /* main.m */; };
+		B41865C71A4863B7002049DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B41865C61A4863B7002049DF /* AppDelegate.m */; };
+		B41865CD1A4863B7002049DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41865CB1A4863B7002049DF /* Main.storyboard */; };
+		B41865CF1A4863B7002049DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41865CE1A4863B7002049DF /* Images.xcassets */; };
+		B41865D21A4863B7002049DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B41865D01A4863B7002049DF /* LaunchScreen.xib */; };
+		B41865DE1A4863B7002049DF /* ComicNerdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41865DD1A4863B7002049DF /* ComicNerdsTests.m */; };
+		B41865F41A486422002049DF /* issueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B41865E91A486422002049DF /* issueModel.m */; };
+		B41865F51A486422002049DF /* issueInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B41865EB1A486422002049DF /* issueInfo.m */; };
+		B41865F61A486422002049DF /* comicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B41865ED1A486422002049DF /* comicModel.m */; };
+		B41865F71A486422002049DF /* comicInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B41865EF1A486422002049DF /* comicInfo.m */; };
+		B41865F81A486422002049DF /* creditsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B41865F11A486422002049DF /* creditsModel.m */; };
+		B41865F91A486422002049DF /* creditsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B41865F31A486422002049DF /* creditsInfo.m */; };
+		B41866011A48A047002049DF /* AddComicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41865FC1A48A047002049DF /* AddComicViewController.m */; };
+		B41866021A48A047002049DF /* SearchComicsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41865FE1A48A047002049DF /* SearchComicsTableViewController.m */; };
+		B41866031A48A047002049DF /* ComicIssuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41866001A48A047002049DF /* ComicIssuesTableViewController.m */; };
+		B418660A1A48A0D7002049DF /* ComicsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41866051A48A0D7002049DF /* ComicsListTableViewController.m */; };
+		B418660B1A48A0D7002049DF /* EditComicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41866071A48A0D7002049DF /* EditComicViewController.m */; };
+		B418660C1A48A0D7002049DF /* ComicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41866091A48A0D7002049DF /* ComicDetailViewController.m */; };
+		B41866101A48A159002049DF /* MTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B418660F1A48A159002049DF /* MTLoginViewController.m */; };
+		B4762F4B1A48AF260078E3BA /* FacebookLogin2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4762F4A1A48AF260078E3BA /* FacebookLogin2.png */; };
+		B4762F4D1A48AF6B0078E3BA /* MyComics.png in Resources */ = {isa = PBXBuildFile; fileRef = B4762F4C1A48AF6B0078E3BA /* MyComics.png */; };
+		B4762F4F1A48AFBB0078E3BA /* MyComicsLogoPhoneLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = B4762F4E1A48AFBB0078E3BA /* MyComicsLogoPhoneLarge.png */; };
+		B4762F511A48B0180078E3BA /* MyComicsLogoLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = B4762F501A48B0180078E3BA /* MyComicsLogoLogin.png */; };
+		B4762F531A48B3AF0078E3BA /* MyComicsLogoLaunch2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4762F521A48B3AF0078E3BA /* MyComicsLogoLaunch2x.png */; };
+		B4762F561A49BA670078E3BA /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4762F551A49BA670078E3BA /* MenuViewController.m */; };
+		B4762F581A49BDE70078E3BA /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = B4762F571A49BDE70078E3BA /* logout.png */; };
+		B4762F5B1A49C07F0078E3BA /* MTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B4762F5A1A49C07F0078E3BA /* MTConstants.m */; };
+		B4762F601A51E7C20078E3BA /* slateGrayAS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4762F5F1A51E7C20078E3BA /* slateGrayAS.jpg */; };
+		B4762F631A51EE9B0078E3BA /* ActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4762F621A51EE9B0078E3BA /* ActionView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B41865D81A4863B7002049DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B41865B61A4863B6002049DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B41865BD1A4863B6002049DF;
+			remoteInfo = ComicNerds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55CE9D77AF046BC72EB3710B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41865BE1A4863B7002049DF /* ComicNerds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicNerds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41865C21A4863B7002049DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41865C31A4863B7002049DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B41865C51A4863B7002049DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B41865C61A4863B7002049DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B41865CC1A4863B7002049DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B41865CE1A4863B7002049DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B41865D11A4863B7002049DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B41865D71A4863B7002049DF /* ComicNerdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComicNerdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41865DC1A4863B7002049DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41865DD1A4863B7002049DF /* ComicNerdsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicNerdsTests.m; sourceTree = "<group>"; };
+		B41865E81A486422002049DF /* issueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = issueModel.h; sourceTree = "<group>"; };
+		B41865E91A486422002049DF /* issueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = issueModel.m; sourceTree = "<group>"; };
+		B41865EA1A486422002049DF /* issueInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = issueInfo.h; sourceTree = "<group>"; };
+		B41865EB1A486422002049DF /* issueInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = issueInfo.m; sourceTree = "<group>"; };
+		B41865EC1A486422002049DF /* comicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comicModel.h; sourceTree = "<group>"; };
+		B41865ED1A486422002049DF /* comicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comicModel.m; sourceTree = "<group>"; };
+		B41865EE1A486422002049DF /* comicInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comicInfo.h; sourceTree = "<group>"; };
+		B41865EF1A486422002049DF /* comicInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comicInfo.m; sourceTree = "<group>"; };
+		B41865F01A486422002049DF /* creditsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = creditsModel.h; sourceTree = "<group>"; };
+		B41865F11A486422002049DF /* creditsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = creditsModel.m; sourceTree = "<group>"; };
+		B41865F21A486422002049DF /* creditsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = creditsInfo.h; sourceTree = "<group>"; };
+		B41865F31A486422002049DF /* creditsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = creditsInfo.m; sourceTree = "<group>"; };
+		B41865FB1A48A047002049DF /* AddComicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddComicViewController.h; sourceTree = "<group>"; };
+		B41865FC1A48A047002049DF /* AddComicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddComicViewController.m; sourceTree = "<group>"; };
+		B41865FD1A48A047002049DF /* SearchComicsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchComicsTableViewController.h; sourceTree = "<group>"; };
+		B41865FE1A48A047002049DF /* SearchComicsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchComicsTableViewController.m; sourceTree = "<group>"; };
+		B41865FF1A48A047002049DF /* ComicIssuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicIssuesTableViewController.h; sourceTree = "<group>"; };
+		B41866001A48A047002049DF /* ComicIssuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicIssuesTableViewController.m; sourceTree = "<group>"; };
+		B41866041A48A0D7002049DF /* ComicsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicsListTableViewController.h; sourceTree = "<group>"; };
+		B41866051A48A0D7002049DF /* ComicsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicsListTableViewController.m; sourceTree = "<group>"; };
+		B41866061A48A0D7002049DF /* EditComicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditComicViewController.h; sourceTree = "<group>"; };
+		B41866071A48A0D7002049DF /* EditComicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditComicViewController.m; sourceTree = "<group>"; };
+		B41866081A48A0D7002049DF /* ComicDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicDetailViewController.h; sourceTree = "<group>"; };
+		B41866091A48A0D7002049DF /* ComicDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicDetailViewController.m; sourceTree = "<group>"; };
+		B418660E1A48A159002049DF /* MTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLoginViewController.h; sourceTree = "<group>"; };
+		B418660F1A48A159002049DF /* MTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLoginViewController.m; sourceTree = "<group>"; };
+		B4762F491A48A5E80078E3BA /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		B4762F4A1A48AF260078E3BA /* FacebookLogin2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacebookLogin2.png; sourceTree = "<group>"; };
+		B4762F4C1A48AF6B0078E3BA /* MyComics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyComics.png; sourceTree = "<group>"; };
+		B4762F4E1A48AFBB0078E3BA /* MyComicsLogoPhoneLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyComicsLogoPhoneLarge.png; sourceTree = "<group>"; };
+		B4762F501A48B0180078E3BA /* MyComicsLogoLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyComicsLogoLogin.png; sourceTree = "<group>"; };
+		B4762F521A48B3AF0078E3BA /* MyComicsLogoLaunch2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyComicsLogoLaunch2x.png; sourceTree = "<group>"; };
+		B4762F541A49BA670078E3BA /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		B4762F551A49BA670078E3BA /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		B4762F571A49BDE70078E3BA /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		B4762F591A49C07F0078E3BA /* MTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTConstants.h; sourceTree = "<group>"; };
+		B4762F5A1A49C07F0078E3BA /* MTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTConstants.m; sourceTree = "<group>"; };
+		B4762F5F1A51E7C20078E3BA /* slateGrayAS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slateGrayAS.jpg; sourceTree = "<group>"; };
+		B4762F611A51EE9B0078E3BA /* ActionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionView.h; sourceTree = "<group>"; };
+		B4762F621A51EE9B0078E3BA /* ActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionView.m; sourceTree = "<group>"; };
+		C10D8B8FED46E4B406FC663D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CE28D8AD10A1BA1CF8AAAF5E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B41865BB1A4863B6002049DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8ABE84053FF90B28CC47519 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41865D41A4863B7002049DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87AFEDA5085988C226B66BE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE28D8AD10A1BA1CF8AAAF5E /* Pods.debug.xcconfig */,
+				C10D8B8FED46E4B406FC663D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		89850E933B85A6CE573D5C1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55CE9D77AF046BC72EB3710B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B41865B51A4863B6002049DF = {
+			isa = PBXGroup;
+			children = (
+				B41865C01A4863B7002049DF /* ComicNerds */,
+				B41865DA1A4863B7002049DF /* ComicNerdsTests */,
+				B41865BF1A4863B7002049DF /* Products */,
+				87AFEDA5085988C226B66BE3 /* Pods */,
+				89850E933B85A6CE573D5C1B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B41865BF1A4863B7002049DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B41865BE1A4863B7002049DF /* ComicNerds.app */,
+				B41865D71A4863B7002049DF /* ComicNerdsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B41865C01A4863B7002049DF /* ComicNerds */ = {
+			isa = PBXGroup;
+			children = (
+				B41865C51A4863B7002049DF /* AppDelegate.h */,
+				B41865C61A4863B7002049DF /* AppDelegate.m */,
+				B4762F491A48A5E80078E3BA /* Defines.h */,
+				B4762F591A49C07F0078E3BA /* MTConstants.h */,
+				B4762F5A1A49C07F0078E3BA /* MTConstants.m */,
+				B4762F611A51EE9B0078E3BA /* ActionView.h */,
+				B4762F621A51EE9B0078E3BA /* ActionView.m */,
+				B418660D1A48A109002049DF /* Login */,
+				B41865FA1A48A026002049DF /* Add */,
+				B41865E71A4863DE002049DF /* Comics */,
+				B41865CB1A4863B7002049DF /* Main.storyboard */,
+				B41865CE1A4863B7002049DF /* Images.xcassets */,
+				B41865D01A4863B7002049DF /* LaunchScreen.xib */,
+				B41865C11A4863B7002049DF /* Supporting Files */,
+			);
+			path = ComicNerds;
+			sourceTree = "<group>";
+		};
+		B41865C11A4863B7002049DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4762F571A49BDE70078E3BA /* logout.png */,
+				B4762F501A48B0180078E3BA /* MyComicsLogoLogin.png */,
+				B4762F5F1A51E7C20078E3BA /* slateGrayAS.jpg */,
+				B4762F4E1A48AFBB0078E3BA /* MyComicsLogoPhoneLarge.png */,
+				B4762F521A48B3AF0078E3BA /* MyComicsLogoLaunch2x.png */,
+				B4762F4A1A48AF260078E3BA /* FacebookLogin2.png */,
+				B41865C21A4863B7002049DF /* Info.plist */,
+				B4762F4C1A48AF6B0078E3BA /* MyComics.png */,
+				B41865C31A4863B7002049DF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B41865DA1A4863B7002049DF /* ComicNerdsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B41865DD1A4863B7002049DF /* ComicNerdsTests.m */,
+				B41865DB1A4863B7002049DF /* Supporting Files */,
+			);
+			path = ComicNerdsTests;
+			sourceTree = "<group>";
+		};
+		B41865DB1A4863B7002049DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B41865DC1A4863B7002049DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B41865E71A4863DE002049DF /* Comics */ = {
+			isa = PBXGroup;
+			children = (
+				B41865E81A486422002049DF /* issueModel.h */,
+				B41865E91A486422002049DF /* issueModel.m */,
+				B41865EA1A486422002049DF /* issueInfo.h */,
+				B41865EB1A486422002049DF /* issueInfo.m */,
+				B41865EC1A486422002049DF /* comicModel.h */,
+				B41865ED1A486422002049DF /* comicModel.m */,
+				B41865EE1A486422002049DF /* comicInfo.h */,
+				B41865EF1A486422002049DF /* comicInfo.m */,
+				B41865F01A486422002049DF /* creditsModel.h */,
+				B41865F11A486422002049DF /* creditsModel.m */,
+				B41865F21A486422002049DF /* creditsInfo.h */,
+				B41865F31A486422002049DF /* creditsInfo.m */,
+			);
+			name = Comics;
+			sourceTree = "<group>";
+		};
+		B41865FA1A48A026002049DF /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				B41866041A48A0D7002049DF /* ComicsListTableViewController.h */,
+				B41866051A48A0D7002049DF /* ComicsListTableViewController.m */,
+				B41866061A48A0D7002049DF /* EditComicViewController.h */,
+				B41866071A48A0D7002049DF /* EditComicViewController.m */,
+				B41866081A48A0D7002049DF /* ComicDetailViewController.h */,
+				B41866091A48A0D7002049DF /* ComicDetailViewController.m */,
+				B41865FB1A48A047002049DF /* AddComicViewController.h */,
+				B41865FC1A48A047002049DF /* AddComicViewController.m */,
+				B41865FD1A48A047002049DF /* SearchComicsTableViewController.h */,
+				B41865FE1A48A047002049DF /* SearchComicsTableViewController.m */,
+				B41865FF1A48A047002049DF /* ComicIssuesTableViewController.h */,
+				B41866001A48A047002049DF /* ComicIssuesTableViewController.m */,
+			);
+			name = Add;
+			sourceTree = "<group>";
+		};
+		B418660D1A48A109002049DF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B418660E1A48A159002049DF /* MTLoginViewController.h */,
+				B418660F1A48A159002049DF /* MTLoginViewController.m */,
+				B4762F541A49BA670078E3BA /* MenuViewController.h */,
+				B4762F551A49BA670078E3BA /* MenuViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B41865BD1A4863B6002049DF /* ComicNerds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B41865E11A4863B7002049DF /* Build configuration list for PBXNativeTarget "ComicNerds" */;
+			buildPhases = (
+				4CC80E9C36474C890A4BD73C /* Check Pods Manifest.lock */,
+				B41865BA1A4863B6002049DF /* Sources */,
+				B41865BB1A4863B6002049DF /* Frameworks */,
+				B41865BC1A4863B6002049DF /* Resources */,
+				9EDC2ED6E95177F68C99B0A4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComicNerds;
+			productName = ComicNerds;
+			productReference = B41865BE1A4863B7002049DF /* ComicNerds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B41865D61A4863B7002049DF /* ComicNerdsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B41865E41A4863B7002049DF /* Build configuration list for PBXNativeTarget "ComicNerdsTests" */;
+			buildPhases = (
+				B41865D31A4863B7002049DF /* Sources */,
+				B41865D41A4863B7002049DF /* Frameworks */,
+				B41865D51A4863B7002049DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B41865D91A4863B7002049DF /* PBXTargetDependency */,
+			);
+			name = ComicNerdsTests;
+			productName = ComicNerdsTests;
+			productReference = B41865D71A4863B7002049DF /* ComicNerdsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B41865B61A4863B6002049DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Nutech;
+				TargetAttributes = {
+					B41865BD1A4863B6002049DF = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					B41865D61A4863B7002049DF = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = B41865BD1A4863B6002049DF;
+					};
+				};
+			};
+			buildConfigurationList = B41865B91A4863B6002049DF /* Build configuration list for PBXProject "ComicNerds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B41865B51A4863B6002049DF;
+			productRefGroup = B41865BF1A4863B7002049DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B41865BD1A4863B6002049DF /* ComicNerds */,
+				B41865D61A4863B7002049DF /* ComicNerdsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B41865BC1A4863B6002049DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4762F511A48B0180078E3BA /* MyComicsLogoLogin.png in Resources */,
+				B4762F4D1A48AF6B0078E3BA /* MyComics.png in Resources */,
+				B4762F4F1A48AFBB0078E3BA /* MyComicsLogoPhoneLarge.png in Resources */,
+				B41865CD1A4863B7002049DF /* Main.storyboard in Resources */,
+				B41865D21A4863B7002049DF /* LaunchScreen.xib in Resources */,
+				B4762F531A48B3AF0078E3BA /* MyComicsLogoLaunch2x.png in Resources */,
+				B4762F601A51E7C20078E3BA /* slateGrayAS.jpg in Resources */,
+				B4762F4B1A48AF260078E3BA /* FacebookLogin2.png in Resources */,
+				B41865CF1A4863B7002049DF /* Images.xcassets in Resources */,
+				B4762F581A49BDE70078E3BA /* logout.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41865D51A4863B7002049DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CC80E9C36474C890A4BD73C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9EDC2ED6E95177F68C99B0A4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B41865BA1A4863B6002049DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41865F81A486422002049DF /* creditsModel.m in Sources */,
+				B41866011A48A047002049DF /* AddComicViewController.m in Sources */,
+				B41865F41A486422002049DF /* issueModel.m in Sources */,
+				B4762F561A49BA670078E3BA /* MenuViewController.m in Sources */,
+				B41865F51A486422002049DF /* issueInfo.m in Sources */,
+				B41865C71A4863B7002049DF /* AppDelegate.m in Sources */,
+				B41866031A48A047002049DF /* ComicIssuesTableViewController.m in Sources */,
+				B4762F5B1A49C07F0078E3BA /* MTConstants.m in Sources */,
+				B41865F91A486422002049DF /* creditsInfo.m in Sources */,
+				B418660B1A48A0D7002049DF /* EditComicViewController.m in Sources */,
+				B4762F631A51EE9B0078E3BA /* ActionView.m in Sources */,
+				B41865C41A4863B7002049DF /* main.m in Sources */,
+				B418660A1A48A0D7002049DF /* ComicsListTableViewController.m in Sources */,
+				B41866101A48A159002049DF /* MTLoginViewController.m in Sources */,
+				B41865F71A486422002049DF /* comicInfo.m in Sources */,
+				B41866021A48A047002049DF /* SearchComicsTableViewController.m in Sources */,
+				B418660C1A48A0D7002049DF /* ComicDetailViewController.m in Sources */,
+				B41865F61A486422002049DF /* comicModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41865D31A4863B7002049DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41865DE1A4863B7002049DF /* ComicNerdsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B41865D91A4863B7002049DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B41865BD1A4863B6002049DF /* ComicNerds */;
+			targetProxy = B41865D81A4863B7002049DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B41865CB1A4863B7002049DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B41865CC1A4863B7002049DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B41865D01A4863B7002049DF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B41865D11A4863B7002049DF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B41865DF1A4863B7002049DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B41865E01A4863B7002049DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B41865E21A4863B7002049DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE28D8AD10A1BA1CF8AAAF5E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ComicNerds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B41865E31A4863B7002049DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C10D8B8FED46E4B406FC663D /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ComicNerds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B41865E51A4863B7002049DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ComicNerdsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComicNerds.app/ComicNerds";
+			};
+			name = Debug;
+		};
+		B41865E61A4863B7002049DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ComicNerdsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComicNerds.app/ComicNerds";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B41865B91A4863B6002049DF /* Build configuration list for PBXProject "ComicNerds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41865DF1A4863B7002049DF /* Debug */,
+				B41865E01A4863B7002049DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B41865E11A4863B7002049DF /* Build configuration list for PBXNativeTarget "ComicNerds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41865E21A4863B7002049DF /* Debug */,
+				B41865E31A4863B7002049DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B41865E41A4863B7002049DF /* Build configuration list for PBXNativeTarget "ComicNerdsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41865E51A4863B7002049DF /* Debug */,
+				B41865E61A4863B7002049DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B41865B61A4863B6002049DF /* Project object */;
+}

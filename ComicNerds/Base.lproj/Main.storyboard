@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="vXZ-lx-hvc" customClass="MTLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="nsQ-hz-k65" kind="modal" identifier="loginToHomeSegue" modalTransitionStyle="flipHorizontal" id="OMO-y5-AUv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="301"/>
+        </scene>
+        <!--Add Comic-->
+        <scene sceneID="K3s-Ff-Fmy">
+            <objects>
+                <viewController id="yGr-JX-B0Y" customClass="AddComicViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bGi-ta-d3P"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rjo-nU-V67"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F7y-sA-QX3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Issue Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Vh-Yx-ah1">
+                                <rect key="frame" x="260" y="208" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Publication Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q61-pm-Ndh">
+                                <rect key="frame" x="260" y="253" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftf-uf-F0i">
+                                <rect key="frame" x="260" y="303" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Author" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lFH-nP-IMN">
+                                <rect key="frame" x="260" y="353" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Artist" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e9c-LK-LoI">
+                                <rect key="frame" x="260" y="404" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Publisher" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4bR-I7-xGN">
+                                <rect key="frame" x="260" y="458" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xxg-MC-IVk">
+                                <rect key="frame" x="260" y="512" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRF-bR-1Xw"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WK-R3-Fxe">
+                                <rect key="frame" x="149" y="585" width="116" height="30"/>
+                                <state key="normal" title="Select Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectPictureButton:" destination="yGr-JX-B0Y" eventType="touchUpInside" id="PMw-GZ-qwz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZk-Uf-SZA">
+                                <rect key="frame" x="149" y="634" width="116" height="30"/>
+                                <state key="normal" title="Take Picture">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePictureButton:" destination="yGr-JX-B0Y" eventType="touchUpInside" id="oJY-NF-rUM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qRF-bR-1Xw" firstAttribute="top" secondItem="bGi-ta-d3P" secondAttribute="bottom" constant="3" id="0O5-Z7-WRk"/>
+                            <constraint firstItem="Rjo-nU-V67" firstAttribute="top" secondItem="qRF-bR-1Xw" secondAttribute="bottom" constant="569" id="8N1-4T-GGC"/>
+                            <constraint firstAttribute="centerX" secondItem="lFH-nP-IMN" secondAttribute="centerX" id="9Ez-As-JE3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qRF-bR-1Xw" secondAttribute="trailing" constant="300" id="DI0-ig-P6G"/>
+                            <constraint firstAttribute="centerX" secondItem="Xxg-MC-IVk" secondAttribute="centerX" id="FiJ-Is-7tb"/>
+                            <constraint firstAttribute="centerX" secondItem="4bR-I7-xGN" secondAttribute="centerX" id="PrT-53-AT4"/>
+                            <constraint firstAttribute="centerX" secondItem="6WK-R3-Fxe" secondAttribute="centerX" id="UBG-Ls-gix"/>
+                            <constraint firstAttribute="centerX" secondItem="Q61-pm-Ndh" secondAttribute="centerX" id="auk-2Q-NLV"/>
+                            <constraint firstAttribute="centerX" secondItem="e9c-LK-LoI" secondAttribute="centerX" id="bCA-8P-pHU"/>
+                            <constraint firstAttribute="centerX" secondItem="1Vh-Yx-ah1" secondAttribute="centerX" id="bXQ-O2-b5V"/>
+                            <constraint firstAttribute="centerX" secondItem="MZk-Uf-SZA" secondAttribute="centerX" id="ng2-Di-KTl"/>
+                            <constraint firstItem="MZk-Uf-SZA" firstAttribute="top" secondItem="6WK-R3-Fxe" secondAttribute="bottom" constant="19" id="xF8-4z-Hal"/>
+                            <constraint firstAttribute="centerX" secondItem="ftf-uf-F0i" secondAttribute="centerX" id="yAY-A5-28t"/>
+                            <constraint firstItem="6WK-R3-Fxe" firstAttribute="top" secondItem="Xxg-MC-IVk" secondAttribute="bottom" constant="43" id="zfH-np-acV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Comic" id="uec-Yt-cRY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JEw-sD-zUZ">
+                            <connections>
+                                <action selector="addComicButton:" destination="yGr-JX-B0Y" id="NQT-WK-Iim"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="artistTextField" destination="e9c-LK-LoI" id="AxQ-ib-7HH"/>
+                        <outlet property="authorTextField" destination="lFH-nP-IMN" id="kvZ-VX-tvc"/>
+                        <outlet property="comicImage" destination="qRF-bR-1Xw" id="Jql-Vi-raG"/>
+                        <outlet property="commentsTextField" destination="Xxg-MC-IVk" id="fXs-8P-H2R"/>
+                        <outlet property="issueNumTextField" destination="1Vh-Yx-ah1" id="Cws-6l-EJG"/>
+                        <outlet property="publicationDateTextField" destination="Q61-pm-Ndh" id="eWw-Kh-liu"/>
+                        <outlet property="publisherTextField" destination="4bR-I7-xGN" id="xKh-Q3-nco"/>
+                        <outlet property="selectPhotoButton" destination="6WK-R3-Fxe" id="Slp-Md-lcX"/>
+                        <outlet property="takePictureButton" destination="MZk-Uf-SZA" id="LJa-2I-Wta"/>
+                        <outlet property="titleNameTextField" destination="ftf-uf-F0i" id="H8M-fm-eYW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAQ-sr-oTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3165" y="351"/>
+        </scene>
+        <!--Main Menu-->
+        <scene sceneID="uha-Nr-9r6">
+            <objects>
+                <viewController id="b19-4b-zqe" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JQx-TN-YHv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kk5-2y-l3B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zUV-9s-G7U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M82-qt-f4Y">
+                                <rect key="frame" x="190" y="283" width="182" height="50"/>
+                                <state key="normal" title="Add Comic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yGr-JX-B0Y" kind="push" identifier="toAddComic" id="bHU-AY-HC4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aa-Az-ckP">
+                                <rect key="frame" x="190" y="363" width="182" height="50"/>
+                                <state key="normal" title="Edit Comic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fkA-2r-idq" kind="push" identifier="toEditTableView" id="xqm-GV-jg1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gL3-bf-vd2">
+                                <rect key="frame" x="209" y="443" width="182" height="50"/>
+                                <state key="normal" title="List Comic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fkA-2r-idq" kind="push" identifier="toComicsList" id="vwP-Ld-UPf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oox-kq-eqG">
+                                <rect key="frame" x="260" y="523" width="182" height="50"/>
+                                <state key="normal" title="Search Comics">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchButtonPressed:" destination="b19-4b-zqe" eventType="touchUpInside" id="gHW-ZH-QkU"/>
+                                    <segue destination="9QE-dY-bUH" kind="push" id="Ajr-RA-naX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R8H-lA-M7j">
+                                <rect key="frame" x="0.0" y="65" width="170" height="170"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Oox-kq-eqG" secondAttribute="centerX" id="age-kb-pIs"/>
+                            <constraint firstAttribute="centerX" secondItem="M82-qt-f4Y" secondAttribute="centerX" id="iQl-aa-8Ic"/>
+                            <constraint firstAttribute="centerX" secondItem="3aa-Az-ckP" secondAttribute="centerX" id="jH7-VX-3hz"/>
+                            <constraint firstAttribute="centerX" secondItem="gL3-bf-vd2" secondAttribute="centerX" id="zNt-Kx-cDJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main Menu" id="WpQ-4P-a32">
+                        <barButtonItem key="leftBarButtonItem" image="logout.png" id="FnD-wb-dHk">
+                            <connections>
+                                <action selector="logOutButtonTapAction:" destination="b19-4b-zqe" id="6GG-qX-9pt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="M82-qt-f4Y" id="gth-y2-skm"/>
+                        <outlet property="editButton" destination="3aa-Az-ckP" id="9OE-iI-sue"/>
+                        <outlet property="imgView" destination="R8H-lA-M7j" id="5Zv-MG-JZT"/>
+                        <outlet property="listButton" destination="gL3-bf-vd2" id="H9b-iz-LZI"/>
+                        <outlet property="logoutButton" destination="FnD-wb-dHk" id="YOb-H0-wOR"/>
+                        <outlet property="searchButton" destination="Oox-kq-eqG" id="shv-9C-w2A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFK-09-DCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2400" y="335"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qpw-eY-cWW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nsQ-hz-k65" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="L0r-Xk-crj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ufW-Vt-4ma">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b19-4b-zqe" kind="relationship" relationship="rootViewController" id="QOz-Su-CTz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8T-Uy-5MM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463" y="321"/>
+        </scene>
+        <!--My Collection-->
+        <scene sceneID="naG-Jq-YC2">
+            <objects>
+                <tableViewController id="fkA-2r-idq" customClass="ComicsListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Jat-N2-LuZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="comicsCell" textLabel="tWJ-iY-Dpi" detailTextLabel="LxZ-22-YDO" style="IBUITableViewCellStyleSubtitle" id="whc-Qv-fsp">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="whc-Qv-fsp" id="3LS-pn-zuY">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tWJ-iY-Dpi">
+                                            <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LxZ-22-YDO">
+                                            <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fkA-2r-idq" id="rVX-YO-hJu"/>
+                            <outlet property="delegate" destination="fkA-2r-idq" id="MYB-B8-UEy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Collection" id="uQo-Ff-tEY">
+                        <barButtonItem key="rightBarButtonItem" title="Delete" id="HCZ-ov-35Q">
+                            <connections>
+                                <action selector="editButtonPressed:" destination="fkA-2r-idq" id="IJe-tQ-kDL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="SNo-IM-ibQ" kind="push" identifier="toEditComic" id="QfV-EM-r6R"/>
+                        <segue destination="Ll6-B4-MRt" kind="push" identifier="toComicsDetail" id="zTf-bQ-JIi"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLO-IW-qN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2400" y="1081"/>
+        </scene>
+        <!--Search Comics-->
+        <scene sceneID="OTG-lu-gq6">
+            <objects>
+                <tableViewController id="9QE-dY-bUH" customClass="SearchComicsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6mF-5j-l3T">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="comicViewCell" textLabel="0mH-e1-zyd" detailTextLabel="wrc-oU-Xy2" style="IBUITableViewCellStyleValue1" id="47o-dG-3Dh">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="47o-dG-3Dh" id="pLf-gD-zF1">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0mH-e1-zyd">
+                                            <rect key="frame" x="15" y="11" width="33" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wrc-oU-Xy2">
+                                            <rect key="frame" x="241" y="11" width="44" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9QE-dY-bUH" id="9el-sy-WJQ"/>
+                            <outlet property="delegate" destination="9QE-dY-bUH" id="mOH-QJ-AN2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Search Comics" id="eFF-nm-XLE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="AT2-ba-3ih">
+                            <connections>
+                                <action selector="searchButtonPressed:" destination="9QE-dY-bUH" id="MfV-MH-wFJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="uQr-UT-hRs" kind="push" identifier="toIssueList" id="6Ov-gP-uKr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyY-ag-ka5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3223" y="1074"/>
+        </scene>
+        <!--Comic Issue List-->
+        <scene sceneID="JXD-KM-P0m">
+            <objects>
+                <tableViewController id="uQr-UT-hRs" customClass="ComicIssuesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Prp-R3-f8G">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listcell" textLabel="lT5-cR-qGA" detailTextLabel="zwj-Oq-kgo" style="IBUITableViewCellStyleValue1" id="TDS-rP-tnH">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TDS-rP-tnH" id="HnI-06-OtT">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lT5-cR-qGA">
+                                            <rect key="frame" x="15" y="11" width="33" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zwj-Oq-kgo">
+                                            <rect key="frame" x="246" y="11" width="59" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uQr-UT-hRs" id="goI-52-CxF"/>
+                            <outlet property="delegate" destination="uQr-UT-hRs" id="ju2-Kq-ZTg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Comic Issue List" id="RF2-Lf-55D"/>
+                    <connections>
+                        <segue destination="Ll6-B4-MRt" kind="push" identifier="toComicsDetail" id="vnl-Pp-fNC"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gc-tH-QXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3993" y="1074"/>
+        </scene>
+        <!--Comic Detail-->
+        <scene sceneID="GWm-j8-94E">
+            <objects>
+                <viewController id="Ll6-B4-MRt" customClass="ComicDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CxV-KD-4Kk"/>
+                        <viewControllerLayoutGuide type="bottom" id="FDM-ei-7I8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EMW-hv-4DM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Comic Detail" id="nkb-Ic-qMD">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="cHM-1e-jYl">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="Ll6-B4-MRt" id="Kre-Xg-sTd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="addButtonProperty" destination="cHM-1e-jYl" id="As2-T6-FJK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0p-fE-mi2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4679" y="1399"/>
+        </scene>
+        <!--Edit Comic-->
+        <scene sceneID="mnp-og-i2U">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IqS-vJ-qVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="SNo-IM-ibQ" customClass="EditComicViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1pH-X3-35c"/>
+                        <viewControllerLayoutGuide type="bottom" id="TWT-AU-ef1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rjJ-L5-fVa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Issue Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8BG-Uk-IAE">
+                                <rect key="frame" x="260" y="208" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Publication Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45C-gp-Jhq">
+                                <rect key="frame" x="260" y="253" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2u0-FX-T03">
+                                <rect key="frame" x="260" y="303" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Author" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k1y-e3-5Et">
+                                <rect key="frame" x="260" y="353" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Artist" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YUX-Ei-TGB">
+                                <rect key="frame" x="260" y="404" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Publisher" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y0r-FH-jsg">
+                                <rect key="frame" x="260" y="458" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7z6-Sc-jTA">
+                                <rect key="frame" x="260" y="512" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ew-Xm-Lfl">
+                                <rect key="frame" x="149" y="585" width="116" height="30"/>
+                                <state key="normal" title="Select Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectPictureButton:" destination="SNo-IM-ibQ" eventType="touchUpInside" id="Zvk-uj-ocp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfj-1U-UFk">
+                                <rect key="frame" x="149" y="634" width="116" height="30"/>
+                                <state key="normal" title="Take Picture">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePictureButton:" destination="SNo-IM-ibQ" eventType="touchUpInside" id="1xa-H4-Dpv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="y0r-FH-jsg" secondAttribute="centerX" id="0Dj-Oh-rDX"/>
+                            <constraint firstAttribute="centerX" secondItem="1Ew-Xm-Lfl" secondAttribute="centerX" id="4ED-6i-CrB"/>
+                            <constraint firstAttribute="centerX" secondItem="mfj-1U-UFk" secondAttribute="centerX" id="5oI-FU-cLy"/>
+                            <constraint firstAttribute="centerX" secondItem="k1y-e3-5Et" secondAttribute="centerX" id="9ou-dW-km3"/>
+                            <constraint firstItem="1Ew-Xm-Lfl" firstAttribute="top" secondItem="7z6-Sc-jTA" secondAttribute="bottom" constant="43" id="Ebv-5t-1hK"/>
+                            <constraint firstAttribute="centerX" secondItem="YUX-Ei-TGB" secondAttribute="centerX" id="MNM-de-qlJ"/>
+                            <constraint firstAttribute="centerX" secondItem="2u0-FX-T03" secondAttribute="centerX" id="eNt-TE-KPd"/>
+                            <constraint firstItem="mfj-1U-UFk" firstAttribute="top" secondItem="1Ew-Xm-Lfl" secondAttribute="bottom" constant="19" id="fca-RE-rP4"/>
+                            <constraint firstAttribute="centerX" secondItem="8BG-Uk-IAE" secondAttribute="centerX" id="iDU-wj-kzb"/>
+                            <constraint firstAttribute="centerX" secondItem="7z6-Sc-jTA" secondAttribute="centerX" id="jQS-3j-u6e"/>
+                            <constraint firstAttribute="centerX" secondItem="45C-gp-Jhq" secondAttribute="centerX" id="pZ8-EY-VNT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Comic" id="FE2-1Q-bvt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="La7-ia-x6h">
+                            <connections>
+                                <action selector="saveEditedComic:" destination="SNo-IM-ibQ" id="frh-y4-Mbm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="artistTextField" destination="YUX-Ei-TGB" id="wsc-Ns-M2T"/>
+                        <outlet property="authorTextField" destination="k1y-e3-5Et" id="5ic-Gz-iQg"/>
+                        <outlet property="commentsTextField" destination="7z6-Sc-jTA" id="Q8g-H5-yn9"/>
+                        <outlet property="issueNumTextField" destination="8BG-Uk-IAE" id="GkD-B9-3UA"/>
+                        <outlet property="publicationDateTextField" destination="45C-gp-Jhq" id="El4-NI-lAB"/>
+                        <outlet property="publisherTextField" destination="y0r-FH-jsg" id="vyo-Kt-YRN"/>
+                        <outlet property="selectPhotoButton" destination="1Ew-Xm-Lfl" id="eFI-ay-LhO"/>
+                        <outlet property="takePictureButton" destination="mfj-1U-UFk" id="R1S-BC-s3O"/>
+                        <outlet property="titleNameTextField" destination="2u0-FX-T03" id="LK6-hj-Z3f"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3910" y="344"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logout.png" width="32" height="32"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vwP-Ld-UPf"/>
+        <segue reference="zTf-bQ-JIi"/>
+    </inferredMetricsTieBreakers>
+</document>
